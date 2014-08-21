@@ -24,6 +24,7 @@ func main() {
 
 	http.HandleFunc("/", HomeHandler) // homepage
 	http.ListenAndServe(":"+strconv.Itoa(*port), nil)
+
 }
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
